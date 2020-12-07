@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Exercise2 {
     public static void main(String[] args) {
@@ -16,7 +15,6 @@ public class Exercise2 {
         WebDriver driver = new FirefoxDriver(capabilities);
 
         driver.navigate().to("https://antycaptcha.amberteam.pl/exercises/exercise2?seed=4ba0ec83-95c5-4952-8f41-69e4e749413d");
-        driver.findElement(By.id("t14")).clear();
 
         WebElement clearT14 = driver.findElement(By.id("t14"));
         WebElement editT14 = driver.findElement(By.id("t14"));
@@ -25,5 +23,6 @@ public class Exercise2 {
         clearT14.clear();
         editT14.sendKeys("Type theory air.");
         clickButton.click();
+        driver.close();
     }
 }

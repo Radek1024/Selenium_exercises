@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Exercise1 {
     public static void main(String[] args) {
@@ -23,6 +22,7 @@ public class Exercise1 {
         clickButton1.click();
         clickButton2.click();
         clickButton1.click();
+        driver.close();
 
     }
 }
